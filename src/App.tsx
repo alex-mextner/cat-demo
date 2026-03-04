@@ -11,7 +11,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog"
-import { Plus, Pencil, Trash2, Search } from "lucide-react"
+import { IconPlus, IconPencil, IconTrash, IconSearch } from "@tabler/icons-react"
 
 interface Cat {
   id: string
@@ -137,7 +137,7 @@ function App() {
 
         <div className="flex gap-4 mb-6">
           <div className="relative flex-1">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <IconSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-muted-foreground" />
             <Input
               placeholder="Search cats by name or breed..."
               value={searchTerm}
@@ -146,7 +146,7 @@ function App() {
             />
           </div>
           <Button onClick={() => handleOpenDialog()}>
-            <Plus className="h-4 w-4 mr-2" />
+            <IconPlus className="h-4 w-4 mr-2" />
             Add Cat
           </Button>
         </div>
@@ -183,7 +183,7 @@ function App() {
                     size="sm"
                     onClick={() => handleOpenDialog(cat)}
                   >
-                    <Pencil className="h-4 w-4 mr-1" />
+                    <IconPencil className="h-4 w-4 mr-1" />
                     Edit
                   </Button>
                   <Button
@@ -191,7 +191,7 @@ function App() {
                     size="sm"
                     onClick={() => handleDelete(cat.id)}
                   >
-                    <Trash2 className="h-4 w-4 mr-1" />
+                    <IconTrash className="h-4 w-4 mr-1" />
                     Delete
                   </Button>
                 </CardFooter>

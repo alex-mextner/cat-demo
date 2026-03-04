@@ -41,13 +41,49 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant, size, ...props }, ref) => {
     return (
       <button
+        data-uniq-id="37fba512-ece1-4000-ad88-29f25ed32131"
         className={cn(buttonVariants({ variant, size, className }))}
         ref={ref}
-        {...props}
-      />
-    )
+        {...props} />
+    );
   }
 )
 Button.displayName = "Button"
 
 export { Button, buttonVariants }
+
+
+export const SampleDefault = () => {
+  return (
+    <div
+      data-uniq-id="e89deef2-b44b-480a-81bc-c44ef627d1c4"
+      className="flex flex-wrap items-center gap-4 p-4">
+      <Button data-uniq-id="ddfedd97-6597-4f0e-a7dc-2382fc38fe7b">Save Changes</Button>
+      <Button data-uniq-id="5f4f4a30-a32e-430b-9c11-f35c5fcb8386" variant="secondary">Cancel</Button>
+      <Button data-uniq-id="3ee4b49c-4779-487d-8ac9-c77b9291a2cc" variant="destructive">Delete Account</Button>
+      <Button data-uniq-id="906bf8d3-f398-486e-85ee-1872656cc5e3" variant="outline">Edit Profile</Button>
+      <Button data-uniq-id="e5006c26-6fd3-456e-b18e-331513be9598" variant="ghost">Options</Button>
+      <Button data-uniq-id="89db9583-13a5-4571-801e-269e854acbc4" variant="link">Learn More</Button>
+      <Button data-uniq-id="dfd0653f-3f80-4138-8488-42f3d7135764" size="sm">Small</Button>
+      <Button data-uniq-id="f4cf0a63-cb50-4676-aba0-decea09f3268" size="lg">Large Button</Button>
+      <Button data-uniq-id="b461243f-d2d0-4197-b231-7a188834bffb" size="icon">
+        <svg
+          data-uniq-id="9c5431f8-3616-4ff3-b418-5c84fea9ade9"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round">
+          <path
+            data-uniq-id="b86f452a-98ed-4c6e-869e-1712d4ad1caf"
+            d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </Button>
+      <Button data-uniq-id="b2fbbc48-208d-491f-aa5b-19f1d7e5faaa" disabled>Disabled</Button>
+    </div>
+  );
+};
