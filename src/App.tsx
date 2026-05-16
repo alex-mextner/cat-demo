@@ -29,7 +29,7 @@ const initialCats: Cat[] = [
     breed: "Persian",
     age: "3 years",
     description: "A fluffy and gentle Persian cat who loves to cuddle and nap in sunny spots.",
-    imageUrl: "https://placekitten.com/400/300"
+    imageUrl: "https://cataas.com/cat?position=center&width=400&height=300&tag=persian"
   },
   {
     id: "2",
@@ -37,7 +37,7 @@ const initialCats: Cat[] = [
     breed: "Siamese",
     age: "2 years",
     description: "An elegant Siamese with striking blue eyes and a playful personality.",
-    imageUrl: "https://placekitten.com/401/300"
+    imageUrl: "https://cataas.com/cat?position=center&width=400&height=300&tag=siamese"
   },
   {
     id: "3",
@@ -45,7 +45,7 @@ const initialCats: Cat[] = [
     breed: "Maine Coon",
     age: "4 years",
     description: "A majestic Maine Coon with a luxurious coat and friendly demeanor.",
-    imageUrl: "https://placekitten.com/402/300"
+    imageUrl: "https://cataas.com/cat?position=center&width=400&height=300&tag=maine+coon"
   }
 ]
 
@@ -115,7 +115,7 @@ function App() {
       const newCat: Cat = {
         id: Date.now().toString(),
         ...formData,
-        imageUrl: formData.imageUrl || `https://placekitten.com/${400 + cats.length}/300`
+        imageUrl: formData.imageUrl || `https://cataas.com/cat?position=center&width=400&height=300`
       }
       setCats([...cats, newCat])
     }
