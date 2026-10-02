@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import App from './App.tsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import CanvasPreview from './__canvas_preview__';
+import App from './App.tsx';
 import './index.css';
 
 const PreviewGuard = () => {
