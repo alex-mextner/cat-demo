@@ -139,7 +139,7 @@ export const SampleDefault = () => {
               <input
                 data-uniq-id="e0cfd75f-af1b-4d4b-b3a1-63eb94287d80"
                 type="email"
-                defaultValue="sarah.mitchell@company.com"
+                defaultValue="sarah@example.com"
                 className="col-span-3 rounded-md border bg-background px-3 py-2 text-sm" />
             </div>
           </div>
